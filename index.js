@@ -4,12 +4,12 @@ const app = express();
 app.use(express.json());
 
 
-app.get("/Bajaj", (req, res) => {
+app.get("/bhfl", (req, res) => {
   res.status(200).json({ operation_code: 1 });
 });
 
 
-app.post("/Bajaj", (req, res) => {
+app.post("/bhfl", (req, res) => {
   try {
     const data = req.body.data || [];
     const userId = "sangeetha-bhoopathi";  
